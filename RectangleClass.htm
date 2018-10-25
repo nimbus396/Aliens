@@ -1,0 +1,26 @@
+<html>
+<script src=js/AlienGlobals.js></script>
+<script src="js/AlienClass.js"></script>
+<script src="js/baseClass.js"></script>
+<script src="js/missileClass.js"></script>
+<script src="js/AlienFunctions.js"></script>
+<head>
+<title>Space Invaders</title>
+</head>
+<body onLoad="showBoard();">
+<canvas id="gameBoard" width="600" height="700" style="border:1px solid #000000;" tabindex='0'>
+</canvas>
+<script>
+
+function showBoard() {
+    loadAliens();
+    printAliens(ox,oy);
+    loadBase();
+    canvasListen();
+    alienTimer();
+   }
+
+</script>
+<div id="myDiv" width="200" height="100">here</div>
+</body>
+</html>
